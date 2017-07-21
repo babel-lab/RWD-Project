@@ -1,0 +1,868 @@
+@media (min-width: 1001px) {
+	#logo a{
+	  display: inline-block;
+	  line-height: 22px;
+	  width: 230px;
+	  font-size: 22px;
+  }
+  
+	#main-slide .slider-content .down1{
+    margin-top: 60px !important;
+  }
+  
+  .carousel-caption p{
+    font-size: 20px;
+  }
+  
+  #caption-2{
+    top: 28%;
+  }
+  
+  /*--- 線上客服 ---*/
+  .onlinephone, .oldmembercheck {
+    width: 120px !important;
+  }
+  
+  .onlinephone #arrow1, .onlinephone #arrow2, .oldmembercheck  #arrow3, .oldmembercheck  #arrow4{
+    display: none !important;
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    position: absolute;
+    top: 580px;
+  }
+
+  #g_t {
+    position: absolute;
+    top: 600px;
+  }
+
+  #g_h {
+    position: absolute;
+    top: 640px;
+  }
+
+  #g_m {
+    position: absolute;
+    top: 680px;
+  }
+  
+  /*--- 健檢項目 ---*/
+  
+  #side-menu{
+	  position: fixed;
+	  top: 46% !important;
+	  right: 20% !important;
+	  width: auto !important;
+  }
+  
+  /* 健檢選單頁籤  */
+  #side-menu h4, #side-menu #openarrow1, #side-menu #openarrow2{
+    display: none !important;
+  }
+
+  #carditem #side-menu{
+    right: 20%;
+  }
+
+  #newsitem #side-menu{
+    right: 22%;
+  }
+  
+}
+
+@media (max-width: 1000px) {
+	#logo a{
+	  display: block;
+	  line-height: 22px;
+	  width: 230px;
+	  font-size: 22px;
+  }
+  	
+  .carousel-caption p{
+    font-size: 20px;
+  }
+  
+  #main-slide .slider-content .up1{
+	  margin-top: 20px !important;
+	}
+  
+  #main-slide .slider-content .down1{
+	  margin-top: -10px !important;
+  }
+  
+  #caption-2{
+    top: 28%;
+  }
+  
+  /*--- 線上客服 ---*/
+  .onlinephone, .oldmembercheck{
+    top: 90px;
+    right: 0;
+    width: 30px;
+    border: none;
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+
+  .onlinephone{
+  	z-index: 15;
+    height: 102px;
+    overflow: hidden;
+  }
+  
+  .oldmembercheck{
+  	z-index: 13;
+    height: 132px;
+  }
+ 
+  .oldmembercheck{
+    top: 180px;
+  }
+
+  .pic i, .pic1 i{
+    transform: scale(0.7, 0.7);
+  }
+
+  .pic p, .pic1 p{
+    height: 20px;
+  }
+
+  .pic h4, .pic1 h4{
+  	margin-top: -20px;
+	  padding: 2px;
+    font-size: 18px;
+  }
+  
+  .onlinephone a, .oldmembercheck a{
+    font-size: 10px !important;
+  }
+  
+  .onlinephone .pic i, .onlinephone .phone2 i, .oldmembercheck .pic1 i, .oldmembercheck .phone2 i{
+    display: none;
+  }
+  
+  .onlinephone #arrow1, .oldmembercheck  #arrow3{
+    display: block;
+  }
+  
+  /*--- 健檢項目 ---*/
+  #side-menu{
+	  position: fixed;
+	  top: 306px;
+	  right: 0;
+  }
+
+  /* 健檢選單頁籤  */
+  #side-menu{
+  	padding-top: 10px;
+  	color: #fff;
+  	font-size: 20px;
+  	text-align: center;
+  	text-align: center;
+  	width: 30px;
+  	height: 120px;
+  	background: url(../img/bg/white.png) repeat, #00AE92;
+  	border-radius: 0.5em;
+  	box-shadow:2px 2px 1px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  #carditem #side-menu{
+    background: url(../img/bg/white.png) repeat, #800073;
+  }
+  
+  #newsitem #side-menu{
+    background: url(../img/bg/white.png) repeat, #ff6005;
+  }
+  
+  #side-menu h4{
+  	margin-top: 4px;
+  	display: inline-block;
+  }
+  
+  #side-menu1 a, #side-menu1 li{
+  	padding: 2px;
+  	text-align: center;
+    vertical-align: middle;
+  }
+  
+  #side-menu1 li{
+    display: inline-block;
+  }
+  
+  #side-menu #openarrow1{
+    display: block;
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 450px;
+  }
+  
+  #g_t {
+    top: 460px;
+  }
+  
+  #g_h {
+    top: 530px;
+  }
+  
+  #g_m {
+    top: 560px;
+  }
+}
+
+@media (max-width : 900px) {
+  .container{
+		margin: 0;
+	  width: 100%;
+	}
+	
+	#top-bar{
+	  width: 100%;
+  }
+	
+	.serviceline {
+	  padding-top: 0;
+	  padding-right: 0;
+	  margin-top: -5px;
+	  margin-right: -18px;
+  }
+
+  .serviceline a{
+    font-size: 16px;
+  }
+	
+	#banner img{
+	  margin-left: -30%; 
+	  width: 160%;
+  }
+	
+	#info{
+	  width: 80%;
+	}
+	
+	.footer-bar{
+	  padding: 10px;
+	}
+	
+	#header{
+	  width: 100%;
+	  padding-bottom: 2%;
+	}
+	
+	#logo{
+    padding-left: 0%;
+    margin-left: -10px;
+    padding-top: 3%;
+  }
+
+  #logo a{
+	  display: block;
+	  line-height: 24px;
+	  width: 240px;
+	  font-size: 24px;
+	  background: none;
+	}
+	
+	#logo a:hover{
+	  background: none;
+	}
+
+  .nav a{
+	  font-size: 16px;
+  }
+	
+	.navbar-toggle{
+	  position: relative;
+	  margin-top: 3%;
+	  margin-right: 2%;
+	  color: #ffcc00;
+	}
+	
+	/*---  輪播   ---*/
+	#main-slide{
+	  height: 300px;
+	}
+
+  .carousel-caption{
+	  top: 32%;
+  }
+	
+	.carousel-caption p{
+    color: #fff;
+    font-size: 18px;
+    width: 80%;
+  }
+  
+  #caption-2{
+    top: 28%;
+  }
+    
+  #main-slide .carousel-inner{
+    width: 100%;
+    height: 300px;
+  }
+    
+  #main-slide .item img{
+	  width: 100%;
+	  height: 300px;
+	  -moz-background-size:contain;
+    -webkit-background-size:contain;
+    -o-background-size:contain;
+    background-size:contain;
+  }
+
+  #main-slide .carousel-control .fa-angle-left, 
+  #main-slide .carousel-control .fa-angle-right{
+	  top: 75%;
+  }
+
+  #main-slide .carousel-control .fa-angle-left{
+	  left: 3%;
+  }
+
+  #main-slide .carousel-control .fa-angle-right{
+	  right: 3%;
+  }
+  
+  #main-slide .slider-content h2{
+	  font-size: 20px;
+		line-height: normal !important;
+		margin-bottom: 0;
+	}
+	
+	#main-slide .slider-content h3{
+		font-size: 14px;
+		margin-top: 3px;
+		line-height: normal;
+	}
+	
+	.slider.btn{
+		padding: 0 15px;
+		margin-top: 0;
+		font-size: 12px;
+	}
+	
+	#main-slide .carousel-indicators{
+		//display: none;
+	}
+	
+	#main-slide .slider-content .up1,#main-slide .slider-content .down1{
+    margin: 0 !important;
+    margin-left: -16px !important; 
+    width: 97%;
+  }
+
+	#main-slide .slider-content .up1{
+	  margin-top: 10px !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 24%;
+  }
+	
+	#main-slide .slider-content .down1{
+	  margin-top: 80px !important;
+  }
+	
+  #main-slide .slider-content .up1 ul li{
+  	font-size: 10px !important;
+  	padding: 3px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }  
+  
+  #main-slide .slider-content .down1 ul li{
+	  font-size: 9px !important;
+	  padding: 0;
+  }
+
+  #main-slide .slider-content .down1 .s1, #main-slide .slider-content .down1 .s2{
+    padding-top: -6px;
+    width:45px;
+    height:30px;
+    border-radius: 20px;
+    line-height: 10px;
+    padding: 4px;
+    padding-top: 10px;
+    width:55px;
+    height:40px;
+    border-radius: 40px;
+  }
+
+  #main-slide .slider-content .down1 .s3{
+    padding-top: 4px;
+    width:60px;
+    height:30px;
+    border-radius: 30px;
+    line-height: 10px;
+    padding-top: 10px;
+    width:70px;
+    height:40px;
+    border-radius: 40px;
+  }
+
+  /*-- 最新消息 --*/
+  #row1 .col-md-4 .text{
+    height: 100%;
+  }
+
+  .readmore a{
+  }
+
+  #news .readmore a{
+  }
+
+  #row2 .newslist ul{
+    padding-left: 10%;
+  }
+
+  /*--- 服務據點 ---*/
+  #locationitem{
+  	margin: auto;
+    width: 80%;
+  }
+  
+  .tablelist1 td{
+	  padding: 0px;
+  }
+  
+  .global a{
+	  color: #fff;
+	  font-size: 14px;
+    font-weight: 500;
+    padding: 2px;
+  }
+
+  #g_c {
+    position: absolute;
+    top: 790px;
+    left: 30%;
+  }
+
+  #g_t {
+    position: absolute;
+    top: 830px;
+    left: 44%;
+    background: #ff6600;
+    border-radius: 0.5em;
+  }
+
+  #g_h {
+    position: absolute;
+    top: 860px;
+    left: 40%;
+    background: #FE5B5E;
+    border-radius: 0.5em;
+  }
+
+  #g_m {
+    position: absolute;
+    top: 880px;
+    left: 27%;
+    background: #ffcc00;
+    border-radius: 0.5em;
+  }
+
+  /*--- 回到上面  ---*/
+  .back-to-top i{
+    left: 10px;
+  }
+
+  
+
+  /*--- 健檢項目 ---*/
+  /* 左健檢項目 */
+  #healthdetail, #carddetail, #newsdetail{
+  	margin: auto;
+    width: 90%;
+  }
+  
+  .item96list, .item96list3{
+    width: 85%;
+  }
+
+  #koh2tab .nav-pills, #item96tab .nav-pills, #agechdtab .nav-pills, #itemaddtab .nav-pills, #itemaddtab .nav-pills, #koh2tab .nav-pills, #item96tab .nav-pills, #agechdtab .nav-pills, #ageythtab .nav-pills, #agestgtab .nav-pills, #agewedtab .nav-pills, #agepjttab .nav-pills{
+	  padding-left: 7%;
+  }
+
+  #itemaddtab .nav-pills a, #koh2tab .nav-pills a, #item96tab .nav-pills a, #agechdtab .nav-pills a, #ageythtab .nav-pills a, #agestgtab .nav-pills a, #agewedtab .nav-pills a, #agepjttab .nav-pills a{
+	  font-size: 14px;
+	  padding: 8px 5px;
+  }
+
+  /* 最新消息 */
+  #news2detail table tr td:nth-child(1){
+    width: 10;
+  }
+
+  #news2detail table tr td:nth-child(2){
+    width: 60%;
+  }
+
+  #news1detail2{
+    width: 100%;
+  }
+  
+  /*--- 聯絡我們 ---*/
+  #contactdetail{
+    margin: auto;
+    width: 90%;
+  }
+  
+  .contactinfo td{
+    padding: 3px;
+  }
+  
+  /*--- 名人健檢輪播 ---*/
+  #productslider .carousel-indicators li{
+	  width: 12px !important;
+	  height: 12px !important;
+  }
+}
+
+@media (max-width : 800px) {  
+  #logo a{
+	  line-height: 24px;
+	  width: 230px;
+	  font-size: 22px;
+  } 
+  
+  .nav a{
+	  font-size: 18px;
+  }
+  
+  #banner img{
+	margin-left: -30%; 
+	width: 150%;
+  }
+  
+  /*---  輪播   ---*/
+	.carousel-caption{
+	  top: 42%;
+  }
+  
+  #caption-2{
+    top: 38%;
+  }
+  
+	.carousel-caption p{
+    font-size: 20px;
+  }
+  
+  #main-slide .slider-content .up1{
+	  margin-top: 5% !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 30%;
+  }
+	
+	#main-slide .slider-content .down1{
+    margin-top: 12% !important;    
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 660px;
+  }
+  #g_t {
+    top: 710px;
+  }
+  #g_h {
+    top: 740px;
+  }
+  #g_m {
+    top: 760px;
+  }
+}
+
+@media  (max-width : 700px) { 
+  #logo a{
+	  line-height: 24px;
+	  width: 230px;
+	  font-size: 23px;
+  } 
+  
+  .nav a{
+	  font-size: 17px;
+  }
+    
+  /*---  輪播   ---*/
+	.carousel-caption{
+	  top: 35%;
+  }
+  
+  #caption-2{
+    top: 32%;
+  }
+  
+	.carousel-caption p{
+    font-size: 20px;
+  }
+  
+  #main-slide .slider-content .up1{
+	  margin-top: 5% !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 28%;
+}
+	
+	#main-slide .slider-content .down1{
+    margin-top: 10% !important;    
+  }
+  
+  #main-slide .slider-content .down1 h2{
+    -moz-background-size:contain;        /*for Firefox*/
+    -webkit-background-size:contain;        /*for Google Chrome、Safari*/
+    -o-background-size:contain;        /*for Opera*/
+    background-size:contain;        /*for IE*/
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 630px;
+  }
+  
+  #g_t {
+    top: 650px;
+  }
+  
+  #g_h {
+    top: 680px;
+  }
+  
+  #g_m {
+    top: 700px;
+  }
+}
+
+@media  (max-width : 600px) { 		
+  #logo a{
+	  line-height: 24px;
+	  width: 230px;
+	  font-size: 23px;
+	  //color: purple;  
+  } 
+  .nav a{
+	  font-size: 17px;
+  }  
+  /*---  輪播   ---*/
+	.carousel-caption{
+	  top: 36%;
+  }
+  #caption-2{
+    top: 33%;
+  }
+  
+	.carousel-caption p{
+    font-size: 20px;
+  }
+  
+  #main-slide .slider-content .up1{
+	  margin-top: 5% !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 30%;
+  }
+	
+	#main-slide .slider-content .down1{
+    margin-top: 10% !important;    
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 600px;
+  }
+  
+  #g_t {
+    top: 620px;
+  }
+  
+  #g_h {
+    top: 650px;
+  }
+  
+  #g_m {
+    top: 670px;
+  }
+} 
+
+@media  (max-width : 500px) { 		
+  #logo a{
+	  line-height: 24px;
+	  width: 230px;
+	  font-size: 22px;
+  }
+   
+  .nav a{
+	  font-size: 17px;
+  }
+    
+  /*---  輪播   ---*/
+	.carousel-caption{
+	  top: 35%;
+  }
+  
+  #caption-2{
+    top: 32%;
+  }
+  
+	.carousel-caption p{
+    font-size: 20px;
+  }
+  
+  #main-slide .slider-content .up1{
+	  margin-top: 5% !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 30%;
+  }
+	
+	#main-slide .slider-content .down1{
+    margin-top: 10% !important;    
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 540px;
+  }
+  
+  #g_t {
+    top: 560px;
+  }
+  
+  #g_h {
+    top: 580px;
+  }
+  
+  #g_m {
+    top: 610px;
+  }
+} 
+
+@media  (max-width : 450px) { 
+	#logo{
+	  padding-top: 6%;
+	}
+	
+  #logo a{
+	  line-height: 24px;
+	  width: 230px;
+	  font-size: 22px; 
+  } 
+
+  .nav a{
+	  font-size: 17px;
+  }  
+
+  /*---  輪播   ---*/
+	.carousel-caption{
+	  top: 35%;
+  }
+
+  #caption-2{
+    top: 32%;
+  }
+
+	.carousel-caption p{
+    font-size: 18px;
+  }
+
+  #main-slide .slider-content .up1{
+	  margin-top: 5% !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 30%;
+}
+	
+	#main-slide .slider-content .down1{
+    margin-top: 11% !important;    
+  }
+
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 520px;
+  }
+
+  #g_t {
+    top: 530px;
+  }
+
+  #g_h {
+    top: 556px;
+  }
+  #g_m {
+    top: 580px;
+  }
+
+  .download a{
+    margin-top: -10px;
+  }
+  
+} 
+  
+@media (max-width : 357px) { 
+	#logo{
+	  padding-top: 6%;
+	}
+	
+  #logo a{
+	  line-height: 23px;
+	  width: 220px;
+	  font-size: 21px;
+  }
+  
+  .nav a{
+	  font-size: 16px;
+  } 
+  
+  /*---  輪播   ---*/
+  .carousel-caption{
+	  top: 34%;
+  }
+  
+  #caption-2{
+    top: 30%;
+  }
+  
+  .carousel-caption p{
+    font-size: 18px;
+  }
+  
+  #main-slide .slider-content .up1{
+	  margin-top: 5% !important;
+	}
+
+	#main-slide .slider-content .up1 .tdspace{
+    width: 25%;
+  }
+	
+	#main-slide .slider-content .down1{
+    margin-top: 10% !important;    
+  }
+  
+  /*--- 服務據點 ---*/
+  #g_c {
+    top: 500px;
+  }
+  
+  #g_t {
+    top: 510px;
+  }
+  
+  #g_h {
+    top: 540px;
+  }
+  
+  #g_m {
+    top: 565px;
+  }
+}
