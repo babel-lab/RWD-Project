@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>健康管理諮詢 Optimal</title>
+	<meta name="description" content="健康管理諮詢關服務與項目">
+  <meta name="keywords" content="Optimal, MjOptimal, 健檢, 健康檢查, 健檢費用, 健檢診所">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="zh-tw">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body onload="citymap('t');">
+	
+	 <div id="top">
+	  <div id="top-bar"  class="row">
+	  	<div class="serviceline"><span><a href="tel:0965-826876">服務專線: 0965-826876</a></span></div>
+    </div>
+    <div id="header" class="row">
+  	  <!-- Stat Toggle Nav Link For Mobiles -->
+  	
+      <button type="button" class="navbar-toggle chg-br" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+    
+      <!-- End Toggle Nav Link For Mobiles -->
+  	  <div id="logo"><a href="index.htm">健康管理諮詢 Optimal</a></div>
+  	
+  	  <div class="navbar-collapse collapse">
+  	
+  	    <div id="navbar" class="pull-right" ><!-- 導覽列 col-md-9-->
+          <ul class="nav navbar-nav">
+			      <li><a href="health.htm">健檢項目</a></li>
+			      <li><a href="lifecard.htm">健檢費用</a></li>
+		        <li><a href="location.htm">全球據點</a></li>
+            <li><a href="news.htm">最新消息</a></li>
+            <li><a href="contact.htm">聯絡我們</a></li>
+		      </ul>
+        </div><!-- 導覽列結束 -->
+      </div><!-- #navbar-collapse -->
+    </div><!-- #header -->
+  </div>
+	
+<!-- BANNER區塊開始 -->
+<div id="banner">
+	
+	<img src="img/location/banner.png">
+	
+</div>
+<!-- BANNER區塊結束 -->
+	
+	
+<div id="wrap" class="container">
+ 
+ <div id="bnav"><a href="index.htm">健康管理諮詢 Optimal</a> > <a href="location.htm">全球據點</a></div>
+
+<div id="locationitem"><!-- 全球服務據點 -->
+	
+	<div id="locationdetail">
+	
+	<div class="row1">
+  	  
+  	  <div><h3 class="title3"><i class="fa fa-cubes"></i> 海內外各地健康管理中心</h3></div>
+  	    <p>會員持生活卡，即可透過電話或網路委託預約方式，在海內外各地健康管理中心(<span>台灣/香港/大陸/馬來西亞</span>)，接受會員特約服務，享受跨區及跨國的便利與照護。</p>
+    </div>
+	
+	<div class="row1"><!-- 大地圖(GLOBAL) -->
+    <div><h3 class="title">全球據點</h3>
+    	<p><i class="fa fa-caret-right X2"></i> 請直接點選地圖上區域 或 點選以下連結: <span><a href="#country" onclick="citymap('c');">中國</a>, <a href="#country" onclick="citymap('h');">香港</a>, <a href="#country" onclick="citymap('t');">台灣</a>, <a href="#country" onclick="citymap('m');">馬來西亞</a></span></p></div>
+  </div>
+  <div class="row1">
+    <div class="global">
+    	<div id="g_list"><span id="g_c"><a href="#country" onclick="citymap('c');" >中國</a></span><span id="g_t"><a href="#country" onclick="citymap('t');" >台灣</a></span><span id="g_h"><a href="#country" onclick="citymap('h');" >香港</a></span><span id="g_m"><a href="#country" onclick="citymap('m');" >馬來西亞</a></span></div>
+      <img src="img/location/global1.png" alt="global" />
+    </div>
+  </div><!-- 大地圖(GLOBAL)結束 -->
+  <script>
+  	
+  	function citymap(gstr){//中區地圖依大地圖區域顯示
+  		var countrylist = "";
+  		var clist = "";
+  		var cfirst= "";
+  		if(gstr=="t"){ countrylist='<a href="#city1" onclick=citymap1("c_t");>台北</a>, <a href="#city1" onclick=citymap1("c_y");>桃園</a>, <a href="#city1" onclick=citymap1("c_h");>台中</a>, <a href="#city1" onclick=citymap1("c_k");>高雄</a>'; 
+  		  document.getElementById("localmap").src='img/location/map-taiwan.png';
+  		  clist = '<span id="c_t" style="position:absolute;top:22%;left:66%;background:#ff3300;border-radius:0.5em;" ><a href="#city1" onclick=citymap1("c_t"); >台北</a></span><span id="c_y" style="position:absolute;top:28%;left:50%;background:#660066;border-radius:0.5em;"><a href="#city1" onclick=citymap1("c_y"); >桃園</a></span><span id="c_h" style="position:absolute;top:44%;left:40%;background:#ff0000;border-radius:0.5em;"><a href="#city1" onclick=citymap1("c_h"); >台中</a></span><span id="c_k" style="position:absolute;top:77%;left:35%;background:#003300;border-radius:0.5em;"><a href="#city1" onclick=citymap1("c_h");><a href="#city1" onclick=citymap1("c_k"); >高雄</a></span>';
+  		  cfirst= "c_t";
+  		}
+  		else if(gstr=="m"){ countrylist='<a href="#city1" onclick=citymap1("c_g");>吉隆坡</a>'; 
+  		  document.getElementById("localmap").src='img/location/map-malaysia.png';
+  		  clist = '<span id="c_g" style="position:absolute;top:65%;left:10%;background:#660066;border-radius:0.5em;"><a href="#city1" onclick=citymap1("c_g"); >吉隆坡</a></span>'
+  		  cfirst= "c_g";
+  		}
+  		else if(gstr=="h"){countrylist='<a href="#city1" onclick=citymap1("c_o");>香港</a>';
+  	    document.getElementById("localmap").src='img/location/map-china.png';
+  	    clist = '<span id="c_o" style="position:absolute;top:76%;left:72%;background:#003300;border-radius:0.5em;"><a href="#city1" onclick=citymap1("c_o"); >香港</a></span>';
+  	    cfirst= "c_o";
+  	  }
+  	  else{countrylist='<a href="#city1" onclick=citymap1("c_o");>香港</a>';
+  	    document.getElementById("localmap").src='img/location/map-china.png';
+  	    clist = '<span id="c_o" style="position:absolute;top:76%;left:72%;background:#003300;border-radius:0.5em;"><a href="#city1" onclick=citymap1("c_o"); >香港</a></span>';
+  	    cfirst= "c_o";
+  	  }
+  	  document.getElementById("countrylist").innerHTML= countrylist;
+  	  document.getElementById("c_list").innerHTML= clist;
+  	  citymap1(cfirst);
+  	}
+  	
+  	function citymap1(cfirst){//配合地圖顯示可選的診所資訊
+  		var ipic="<i class='fa fa-cube'></i> ";
+  	  var place = "";
+  	  var clinic="";
+  	  var addr="";
+  	  var parkingurl="";
+  	  var iframemap="";
+  	  var iframeurl="";
+  	  var iframemap2="";
+  	  var tablebg="";
+  	 
+  	  if(cfirst=="c_t"){  //台北
+  	    place = "台灣台北";
+  	    clinic="健管中心旗艦館";
+  	    addr="台北市忠孝西路一段66號44樓 ";
+  	    parkingurl='<a href="#city1" onclick=parking("https://www.google.com.tw/maps/search/%E5%8F%B0%E5%8C%97%E5%B8%82%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F44%E6%A8%93+%E5%81%9C%E8%BB%8A%E5%A0%B4/@25.0463122,121.5065277,15z/data=!3m1!4b1?hl=zh-TW");>  <img src="img/location/parking2.png" class="parkpng" /><a>';
+  	    iframeurl="https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F/@25.0462498,121.5130938,17z/data=!4m2!3m1!1s0x3442a972dc1a9f79:0x7b8d888a58992976?hl=zh-TW";
+  	    iframemap="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/c_t.png'></a>";
+  	    iframemap2="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/map2.png'></a>";
+  	    tablebg="img/location/taiwan-465784_1920.jpg";
+  	  }else if(cfirst=="c_y"){  //桃園
+  	    place = "台灣桃園";
+  	    clinic="桃園健管中心";
+  	    addr="桃園縣蘆竹鄉南崁路二段66號8樓之5 ";
+  	    parkingurl='<a href="#city1" onclick=parking("https://www.google.com.tw/maps/search/%E6%A1%83%E5%9C%92%E7%B8%A3%E8%98%86%E7%AB%B9%E9%84%89%E5%8D%97%E5%B4%81%E8%B7%AF%E4%BA%8C%E6%AE%B566%E8%99%9F+%E5%81%9C%E8%BB%8A%E5%A0%B4/@25.0581093,121.2440662,13z/data=!3m1!4b1?hl=zh-TW");>  <img src="img/location/parking2.png" class="parkpng" /><a>';
+  	    iframeurl="https://www.google.com.tw/maps/place/%E7%BE%8E%E5%85%86%E8%A8%BA%E6%89%80/@25.0580308,121.2768972,17z/data=!3m1!4b1!4m2!3m1!1s0x3442a00e9000142f:0x4abfa37f12ead03c?hl=zh-TW";
+  	    iframemap="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/c_y.png'></a>";
+  	    iframemap2="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/map2.png'></a>";
+  	    tablebg="img/location/taiwan-465784_1920.jpg";
+  	  }else if(cfirst=="c_h"){  //台中
+  	    place = "台灣台中";
+  	    clinic="台中健管中心";
+  	    addr="台中市工業區一路2巷3號12樓 ";
+  	    parkingurl='<a href="#city1" onclick=parking("https://www.google.com.tw/maps/search/%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%B7%A5%E6%A5%AD%E5%8D%80%E4%B8%80%E8%B7%AF2%E5%B7%B73%E8%99%9F+%E5%81%9C%E8%BB%8A%E5%A0%B4/@24.1825456,120.5966785,14z/data=!3m1!4b1?hl=zh-TW");>  <img src="img/location/parking2.png" class="parkpng" /><a>';
+  	    iframeurl="https://www.google.com.tw/maps/place/407%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%B1%AF%E5%8D%80%E5%B7%A5%E6%A5%AD%E5%8D%80%E4%B8%80%E8%B7%AF2%E5%B7%B73%E8%99%9F/@24.1825026,120.6119995,17z/data=!4m2!3m1!1s0x346915f94d257051:0xd0511a683942a031?hl=zh-TW";
+  	    iframemap="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/c_h.png'></a>";
+  	    iframemap2="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/map2.png'></a>";
+  	    tablebg="img/location/taiwan-465784_1920.jpg";
+  	  }else if(cfirst=="c_k"){  //高雄
+  	    place = "台灣高雄";
+  	    clinic="高雄健管中心";
+  	    addr="高雄市新衙路286之1號8樓之1~2 ";
+  	    parkingurl='<a href="#city1" onclick=parking("https://www.google.com.tw/maps/search/%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%A1%99%E8%B7%AF286%E4%B9%8B1%E8%99%9F+%E5%81%9C%E8%BB%8A%E5%A0%B4/@22.5821359,120.2810739,13z/data=!3m1!4b1?hl=zh-TW");>  <img src="img/location/parking2.png" class="parkpng" /><a>';
+  	    iframeurl="https://www.google.com.tw/maps/place/%E7%BE%8E%E5%85%86%E9%AB%98%E9%9B%84%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%E9%86%AB%E5%AD%B8%E4%B8%AD%E5%BF%83/@22.5820555,120.3139049,17z/data=!3m1!4b1!4m2!3m1!1s0x346e0317401a00d1:0x2e58dc2da6dac1c8?hl=zh-TW";
+  	    iframemap="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/c_k.png'></a>";
+  	    iframemap2="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/map2.png'></a>";
+  	    tablebg="img/location/taiwan-465784_1920.jpg";
+  	  }else if(cfirst=="c_o"){  //香港
+  	    place = "中國香港";
+  	    clinic="香港健管中心";
+  	    addr="香港旺角亞皆老街8號朗豪坊辦公大樓29樓全層 ";
+  	    parkingurl='<a href="#city1" onclick=parking("https://www.google.com.tw/maps/search/%E9%A6%99%E6%B8%AF%E4%B9%9D%E9%BE%8D%E6%97%BA%E8%A7%92%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%978%E8%99%9F%E6%9C%97%E8%B1%AA%E5%9D%8A%E5%95%86%E5%A0%B4+%E5%81%9C%E8%BB%8A%E5%A0%B4/@22.3181887,114.1664081,17z/data=!3m1!4b1?hl=zh-TW");>  <img src="img/location/parking2.png" class="parkpng" /><a>';
+  	    iframeurl="https://www.google.com.tw/maps/place/%E9%A6%99%E6%B8%AF%E6%97%BA%E8%A7%92%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%978%E8%99%9F%E6%9C%97%E8%B1%AA%E5%9D%8A%E5%95%86%E5%A0%B4/@22.3181788,114.1664081,17z/data=!3m1!4b1!4m2!3m1!1s0x340400c79a56a73d:0x56bd59404f1dc606?hl=zh-TW";
+  	    iframemap="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/c_o.png'></a>";
+  	    iframemap2="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/map2.png'></a>";
+  	    tablebg="img/location/hong-kong-443992_1920.jpg";
+  	  }
+  	  else if(cfirst=="c_g"){  //吉隆坡
+  	    place = "馬來西亞吉隆坡";
+  	    clinic="馬來西亞健管中心";
+  	    addr="Plaza KPMG 2F-2 No.8 First Avenue,Persiaran Bandar Utama 47800, Petaling Jaya, Selangor, Malaysia.";
+  	    parkingurl='<a href="#city1" onclick=parking("https://www.google.com.tw/maps/place/KPMG/@3.1467063,101.6151302,17z/data=!3m1!4b1!4m2!3m1!1s0x31cc492cbaee02c7:0xdb11c582ed42f9c2?hl=zh-TW");>  <img src="img/location/parking2.png" class="parkpng" /><a>';
+  	    iframeurl="https://www.google.com.tw/maps/place/MJ+Life+Enterprises+Sdn+Bhd/@3.1467373,101.6150224,17z/data=!3m1!4b1!4m2!3m1!1s0x31cc4ed2cb31433f:0xa5e8ede6afff59a2?hl=zh-TW";
+  	    iframemap="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/c_g.png'></a>";
+  	    iframemap2="<a href='#city1' onclick=window.open('"+ iframeurl +"')><img src='img/location/map2.png'></a>";
+  	    tablebg="img/location/kuala-lumpur-328812_1280.jpg";
+  	  }
+  	  document.getElementById("place").innerHTML= ipic + place;
+  	  document.getElementById("clinic").innerHTML= clinic;
+  	  document.getElementById("addr").innerHTML= addr + parkingurl + ' ' + iframemap2;
+  	  document.getElementById("iframemap").innerHTML= iframemap;
+  	  document.getElementById("country1").style.backgroundImage = "url('"+ tablebg  +"')";
+  	}
+  	
+  </script>
+  
+  
+  <section id="country" class="row1"><!-- 中地圖(COUNTRY) -->
+    <div><h3 class="title">城市據點</h3>
+    	<p><i class="fa fa-caret-right X2"></i> 請直接點選地圖上區域 或 點選以下連結: <span id="countrylist"><!--<a href="#city" onclick="citymap1('c_t');">台北</a>, <a href="#city" onclick="citymap1('c_y');" >桃園</a>, <a href="#city" onclick="citymap1('c_h');" >台中</a>, <a href="#city" onclick="citymap1('c_k');" >高雄</a>--></span></p>
+    <table id="country1"><!-- 中地圖左與小地圖右區塊 -->
+      <tr><td>
+      <div class="col-md-6"><!-- 第一塊 -->
+        <div id="local">
+        	<div id="c_list"><!--<span id="c_t"><a href="#country" onclick="citymap1('c_t');" >台北</a></span><span id="c_y"><a href="#country" onclick="citymap1('c_y');" >桃園</a></span><span id="c_h"><a href="#country" onclick="citymap1('c_h');" >台中</a></span><span id="c_k"><a href="#country" onclick="citymap1('c_k');" >高雄</a></span>--></div>
+          <span><img id="localmap" src="img/location/map-taiwan.png" /></span>
+        </div>
+      </div>
+      <div class="col-md-6"><!-- 第一塊 -->
+        <div id="city1"></br></div>
+        <div id="city">
+        	<div class="address1">
+        		<div id="place"><span><i class="fa fa-cube"></i> 台灣台北</span></div>
+        		<div id="clinic">健管中心旗艦館</div>
+        		<div id="addr">台北市忠孝西路一段66號44樓    <a href="#country" onclick="parking('https://www.google.com.tw/maps/search/%E5%8F%B0%E5%8C%97%E5%B8%82%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F29%E6%A8%93+%E5%81%9C%E8%BB%8A%E5%A0%B4/@25.0462739,121.5064955,15z/data=!3m1!4b1!5m1!1e1');"><img src="img/location/parking.png" /><a> <a href="https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F/@25.0462498,121.5130938,17z/data=!4m2!3m1!1s0x3442a972dc1a9f79:0x7b8d888a58992976?hl=zh-TW"><img src="img/location/map2.png"  /></a></div>
+        		<div id="iframemap"><a href=#city" onclick="window.open('https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F/@25.0462498,121.5130938,17z/data=!4m2!3m1!1s0x3442a972dc1a9f79:0x7b8d888a58992976?hl=zh-TW')"><img src="img/location/c_t.png"></a></div>
+        	</div>
+        </div>
+      </div>
+      </td></tr>
+    </table>
+    </div><!-- 中地圖左與小地圖右區塊結束 -->
+    
+  </section><!-- 中地圖(COUNTRY)結束 -->
+  
+  
+	<div id="tablelist" class="row1"><!-- 診所位置表格 -->
+		<div><h3 class="title">診所位置</h3></div>
+		
+	<table class="tablelist1"><tr><td>地區</td><td>診所</td><td>位置</td><td>停車</td><td>地圖</td></tr>
+  <tr>
+    <td>台灣台北</td>
+    <td>健管中心旗艦館</td>
+    <td>台北市忠孝西路一段66號44樓</td>
+    <td><a href="#tablelist" onclick="parking('https://www.google.com.tw/maps/search/%E5%8F%B0%E5%8C%97%E5%B8%82%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F44%E6%A8%93+%E5%81%9C%E8%BB%8A%E5%A0%B4/@25.0463122,121.5065277,15z/data=!3m1!4b1?hl=zh-TW');"><img src="img/location/parking.png"   /></a></td>
+    <td><a href="#tablelist" onclick="window.open('https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E8%A5%BF%E8%B7%AF%E4%B8%80%E6%AE%B566%E8%99%9F/@25.0462498,121.5130938,17z/data=!4m2!3m1!1s0x3442a972dc1a9f79:0x7b8d888a58992976?hl=zh-TW')"><img src="img/location/map.png"  /></a></td>
+  </tr>
+  <tr>
+    <td>台灣桃園</td>
+    <td>桃園健管中心</td>
+    <td>桃園縣蘆竹鄉南崁路二段66號8樓之5</td>
+    <td><a href="#tablelist" onclick="parking('https://www.google.com.tw/maps/search/%E6%A1%83%E5%9C%92%E7%B8%A3%E8%98%86%E7%AB%B9%E9%84%89%E5%8D%97%E5%B4%81%E8%B7%AF%E4%BA%8C%E6%AE%B566%E8%99%9F+%E5%81%9C%E8%BB%8A%E5%A0%B4/@25.0581093,121.2440662,13z/data=!3m1!4b1?hl=zh-TW');"><img src="img/location/parking.png" /></a></td>
+    <td><a href="#tablelist" onclick="window.open('https://www.google.com.tw/maps/place/%E7%BE%8E%E5%85%86%E8%A8%BA%E6%89%80/@25.0580308,121.2768972,17z/data=!3m1!4b1!4m2!3m1!1s0x3442a00e9000142f:0x4abfa37f12ead03c?hl=zh-TW')"><img src="img/location/map.png" /><a></td>
+  </tr>
+  <tr>
+    <td>台灣台中</td>
+    <td>台中健管中心</td>
+    <td>台中市工業區一路2巷3號12樓</td>
+    <td><a href="#tablelist" onclick="parking('https://www.google.com.tw/maps/search/%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%B7%A5%E6%A5%AD%E5%8D%80%E4%B8%80%E8%B7%AF2%E5%B7%B73%E8%99%9F+%E5%81%9C%E8%BB%8A%E5%A0%B4/@24.1825456,120.5966785,14z/data=!3m1!4b1?hl=zh-TW');"><img src="img/location/parking.png" /></a></td>
+    <td><a href="#tablelist" onclick="window.open('https://www.google.com.tw/maps/place/407%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%B1%AF%E5%8D%80%E5%B7%A5%E6%A5%AD%E5%8D%80%E4%B8%80%E8%B7%AF2%E5%B7%B73%E8%99%9F/@24.1825026,120.6119995,17z/data=!4m2!3m1!1s0x346915f94d257051:0xd0511a683942a031?hl=zh-TW')"><img src="img/location/map.png" /></a></td>
+  </tr>
+  <tr>
+    <td>台灣高雄</td>
+    <td>高雄健管中心</td>
+    <td>高雄市新衙路286之1號8樓之1~2</td>
+    <td><a href="#tablelist" onclick="parking('https://www.google.com.tw/maps/search/%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%A1%99%E8%B7%AF286%E4%B9%8B1%E8%99%9F+%E5%81%9C%E8%BB%8A%E5%A0%B4/@22.5821359,120.2810739,13z/data=!3m1!4b1?hl=zh-TW');"><img src="img/location/parking.png" /></a></td>
+    <td><a href="#tablelist" onclick="window.open('https://www.google.com.tw/maps/place/%E7%BE%8E%E5%85%86%E9%AB%98%E9%9B%84%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%E9%86%AB%E5%AD%B8%E4%B8%AD%E5%BF%83/@22.5820555,120.3139049,17z/data=!3m1!4b1!4m2!3m1!1s0x346e0317401a00d1:0x2e58dc2da6dac1c8?hl=zh-TW')"><img src="img/location/map.png" /><a></td>
+  </tr>
+  <tr>
+    <td>中國香港</td>
+    <td>香港健管中心</td>
+    <td>香港旺角亞皆老街8號朗豪坊辦公大樓29樓全層</td>
+    <td><a href="#tablelist" onclick="parking('https://www.google.com.tw/maps/search/%E9%A6%99%E6%B8%AF%E4%B9%9D%E9%BE%8D%E6%97%BA%E8%A7%92%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%978%E8%99%9F%E6%9C%97%E8%B1%AA%E5%9D%8A%E5%95%86%E5%A0%B4+%E5%81%9C%E8%BB%8A%E5%A0%B4/@22.3181887,114.1664081,17z/data=!3m1!4b1?hl=zh-TW');"><img src="img/location/parking.png" /></a></td>
+    <td><a href="#tablelist" onclick="window.open('https://www.google.com.tw/maps/place/%E9%A6%99%E6%B8%AF%E6%97%BA%E8%A7%92%E4%BA%9E%E7%9A%86%E8%80%81%E8%A1%978%E8%99%9F%E6%9C%97%E8%B1%AA%E5%9D%8A%E5%95%86%E5%A0%B4/@22.3181788,114.1664081,17z/data=!3m1!4b1!4m2!3m1!1s0x340400c79a56a73d:0x56bd59404f1dc606?hl=zh-TW')"><img src="img/location/map.png" /></a></td>
+  </tr>
+  <tr>
+    <td>馬來西亞吉隆坡</td>
+    <td>馬來西亞健管中心</td>
+    <td>Plaza KPMG 2F-2 No.8 First Avenue,Persiaran Bandar Utama 47800, Petaling Jaya, Selangor, Malaysia.</td>
+    <td><a href="#tablelist" onclick="parking('https://www.google.com.tw/maps/place/KPMG/@3.1467063,101.6151302,17z/data=!3m1!4b1!4m2!3m1!1s0x31cc492cbaee02c7:0xdb11c582ed42f9c2?hl=zh-TW');"><img src="img/location/parking.png" /></a></td>
+    <td><a href="#tablelist" onclick="window.open('https://www.google.com.tw/maps/place/MJ+Life+Enterprises+Sdn+Bhd/@3.1467373,101.6150224,17z/data=!3m1!4b1!4m2!3m1!1s0x31cc4ed2cb31433f:0xa5e8ede6afff59a2?hl=zh-TW')"><img src="img/location/map.png" /></a></td>
+  </tr>
+  </table>
+	  
+  </div><!-- 診所位置表格結束 -->	
+
+	
+</div>
+</div><!-- 全球服務據點結束 -->
+
+
+  
+  
+  
+  <!-- Back to top -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up fa-2x"></i></a>
+  <!-- 線上客服 -->
+  <div id="onlinephone" class="onlinephone">
+  	<div><i class="fa fa-backward" id="arrow1"  class="arrow1" onclick="onlinephone1('onlinephone');" ></i><i class="fa fa-forward" id="arrow2" class="arrow2" onclick="onlinephone2('onlinephone');"></i></div>
+  	<div class="pic"><i class="fa fa-commenting fa-2x"></i></br><i class="fa fa-phone fa-3x"></i><h4>線上客服</h4></div>
+  	<div class="phone2"><a href="#"  class="line" onclick="window.open('line-qrcode.htm','LINE QRCODE','menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,width=500,height=600');">LINE</a> | <a href="#" class="wechat" onclick="window.open('wechat-qrcode.htm','WeChat QRCODE','menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,width=500,height=600');">WeChat</a></div>
+  </div>
+  <!-- 舊會員排檢 -->
+  <div id="oldmembercheck" class="oldmembercheck">
+  	<div><i class="fa fa-backward" id="arrow3"  class="arrow3" onclick="onlinephone1('oldmembercheck');" ></i><i class="fa fa-forward" id="arrow4" class="arrow4" onclick="onlinephone2('oldmembercheck');"></i></div>
+  	<div class="pic1"><i class="fa fa-plus-square fa-lg"></i></br><i class="fa fa-user-md fa-3x"></i><h4>舊會員排檢</h4></div>
+  	<div class="phone2"><i class="fa fa-hand-o-right fa-lg"></i>馬上預約</br><a href="tel:0965-826876" class="checkbook" >0965-826876</a></div>
+  </div>
+</div>
+<div id="footer">
+  <div class="footer-bar"><strong>健康管理諮詢 Optimal</strong><br>最佳瀏覽狀態請使用 Internet Explorer 10 以上 1024 x 768 解析度<br>Optimal, All Rights Reserved.</div>
+</div>
+<script>
+ function parking(add){ //停車資訊視窗
+  window.open(add,'Parking Info','width=700,height=500');
+}
+</script>
+</body>
+</html>

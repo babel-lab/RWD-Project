@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>健康管理諮詢 Optimal</title>
+	<meta name="description" content="健康管理諮詢關服務與項目">
+  <meta name="keywords" content="Optimal, MjOptimal, 健檢, 健康檢查, 健檢費用, 健檢診所">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="zh-tw">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+	
+	 <div id="top">
+	  <div id="top-bar"  class="row">
+	  	<div class="serviceline"><span><a href="tel:0965-826876">服務專線: 0965-826876</a></span></div>
+    </div>
+    <div id="header" class="row">
+  	  <!-- Stat Toggle Nav Link For Mobiles -->
+  	
+      <button type="button" class="navbar-toggle chg-br" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+    
+      <!-- End Toggle Nav Link For Mobiles -->
+  	  <div id="logo"><a href="index.htm">健康管理諮詢 Optimal</a></div>
+  	
+  	  <div class="navbar-collapse collapse">
+  	
+  	    <div id="navbar" class="pull-right" ><!-- 導覽列 col-md-9-->
+          <ul class="nav navbar-nav">
+			      <li><a href="health.htm">健檢項目</a></li>
+			      <li><a href="lifecard.htm">健檢費用</a></li>
+		        <li><a href="location.htm">全球據點</a></li>
+            <li><a href="news.htm">最新消息</a></li>
+            <li><a href="contact.htm">聯絡我們</a></li>
+		      </ul>
+        </div><!-- 導覽列結束 -->
+      </div><!-- #navbar-collapse -->
+    </div><!-- #header -->
+  </div>
+
+<!-- BANNER區塊開始 -->
+<div id="banner"><img src="img/contact/banner.png"></div>
+<!-- BANNER區塊結束 -->
+
+<div id="wrap" class="container">
+<div id="contactitem" ><!-- 聯絡項目開始 -->
+  
+  <div id="contactdetail"><!-- 聯絡細項區塊開始 -->
+  	<div class="row1">
+  	  
+  	  <h3 class="title3"><i class="fa fa-envelope-o"></i> 聯絡我們</h3>
+  	    <p>有任何問題都可以從這裡告訴服務人員，我們的服務人員會盡快回覆給您。感謝您的指教與愛護！</p>
+  	  
+    </div>
+    <div><h3 class="title">資料填寫</h3>
+    <p><span class="org">* 為必填欄位</span></p></div>
+    <form action="#" method="post" >
+      <table class="contactinfo">
+        <tr><td>聯絡主題</td><td><input type="checkbox" name="item1" value="health"> 健檢相關 <input type="checkbox" name="item2" value="card"> 生活卡 <input type="checkbox" name="item3" value="other"> 其他</td></tr>
+        <tr><td><span>* 姓名</span></td><td><input type="text" id="name" autofocus required ></td></tr>
+        <tr><td>性別</td><td><input type="radio" id="sex" value="male"> 男 <input type="radio" name="sex" value="female"> 女</td></tr>
+        <tr><td><span>* EMAIL</span></td><td><input type="email" id="email" required ></td></tr>
+        <tr><td>聯絡電話</td><td><input type="text" id="phone"></td></tr>
+        <tr><td><span>* 行動電話</span></td><td><input type="tel" id="cellphone" required ></td></tr>
+        <tr><td><span>* 備註</span></td><td><textarea rows="4" cols="22" id="note" required ></textarea></td></tr>
+        <tr><td colspan="2"><input type="reset" id="rstbtn" value="清除資料">  <input type="submit" id="okbtn" value="確認送出"></td></tr>
+      </table>
+    </form>
+    
+  </div><!-- 聯絡細項區塊結束 -->
+</div><!-- contactitem結束 -->
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up fa-2x"></i></a>
+  <!-- 線上客服 -->
+  <div id="onlinephone" class="onlinephone">
+  	<div><i class="fa fa-backward" id="arrow1"  class="arrow1" onclick="onlinephone1('onlinephone');" ></i><i class="fa fa-forward" id="arrow2" class="arrow2" onclick="onlinephone2('onlinephone');"></i></div>
+  	<div class="pic"><i class="fa fa-commenting fa-2x"></i></br><i class="fa fa-phone fa-3x"></i><h4>線上客服</h4></div>
+  	<div class="phone2"><a href="#"  class="line" onclick="window.open('line-qrcode.htm','LINE QRCODE','menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,width=500,height=600');">LINE</a> | <a href="#" class="wechat" onclick="window.open('wechat-qrcode.htm','WeChat QRCODE','menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,width=500,height=600');">WeChat</a></div>
+  </div>
+  <!-- 舊會員排檢 -->
+  <div id="oldmembercheck" class="oldmembercheck">
+  	<div><i class="fa fa-backward" id="arrow3"  class="arrow3" onclick="onlinephone1('oldmembercheck');" ></i><i class="fa fa-forward" id="arrow4" class="arrow4" onclick="onlinephone2('oldmembercheck');"></i></div>
+  	<div class="pic1"><i class="fa fa-plus-square fa-lg"></i></br><i class="fa fa-user-md fa-3x"></i><h4>舊會員排檢</h4></div>
+  	<div class="phone2"><i class="fa fa-hand-o-right fa-lg"></i>馬上預約</br><a href="tel:0965-826876" class="checkbook" >0965-826876</a></div>
+  </div>
+</div>
+<div id="footer">
+  <div class="footer-bar"><strong>健康管理諮詢 Optimal</strong><br>最佳瀏覽狀態請使用 Internet Explorer 10 以上 1024 x 768 解析度<br>Optimal, All Rights Reserved.</div>
+</div>
+</body>
+</html>
